@@ -17,10 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
-    echo "this is login file"
-});
 
-Route::get('/register', function () {
-    echo "this is login file"
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
