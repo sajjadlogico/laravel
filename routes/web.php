@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     echo "this is login file"
 });
+
+Route::get('/register', function () {
+    echo "this is login file"
+});
